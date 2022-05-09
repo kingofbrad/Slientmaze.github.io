@@ -19,7 +19,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--ff-DIN-Consensed) !important;
-    
+
 }
 
 .resizeable {
@@ -61,19 +61,182 @@ body {
     text-transform: uppercase;
 }
 
+.video-container {
+    width: 100%;
+    max-width: 1100px;
+}
+
+/* Home Page */
+@media screen and (max-width:500px) {
+    .bg-hero-image img {
+        width: 100%;
+        max-width: 500px;
+    }
+    .herotext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1%;
+    }
+    #middlebreak {
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+    
+    .aboutspacebetweentags {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+        position: relative;
+        top: -10px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .abouttags {
+        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    
+    .abouttags p {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    
+    .abouttags .title {
+        opacity: 0.7;
+    }
+}
+
+.mainhome {
+    color: var(--Ash-Grey);
+    margin-top: 4%;
+}
+
+.bg-hero-image {
+    position: relative;
+    display: flex;
+}
+
+#readmorelink {
+    text-decoration: none;
+    color: var(--Bandladash-Green)
+}
+
+.bg-hero-image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+    border: var(--Bandladash-Green) 2px solid;
+}
+
+.herotext {
+    font-size: 30px;
+    text-align: center;
+    Display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25%;
+}
+.Downbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Downbtn a {
+    background-color: var(--Bandladash-Green);
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+    font-size: 24px;
+    color:var(--Ash-Grey);
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: opacity .25s ease-in-out;
+}
+.Downbtn a:hover {
+    color: var(--Ash-Grey);
+    opacity: 1;
+}
+.about{
+    margin-top: 15%;
+}
+.reasoning {
+    margin-top: 15%;
+}
+
+.abouttext {
+    font-size: 20px;
+}
+.aboutspacebetweentags {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative;
+    top: -10px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.abouttags {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.abouttags p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.abouttags .title {
+    opacity: 0.7;
+}
+
+.reasoningtext{
+    font-size: 20px;
+}
+
+/* Contact Page Section */
+.contact {
+    color: var(--Ash-Grey);
+}
+@media screen and (max-width:500px) {
+    .formcontainer {
+        margin-left: 6%;
+        margin-right: 6%;
+        margin-top: 10%;
+    }
+}
+
+.formcontainer {
+    margin-top: 15%;
+}
 /* Download Page Section */
 .mainsection {
     color: var(--Ash-Grey);
     display: flex;
-    flex-direction: row-reverse ;
+    flex-direction: row-reverse;
 }
+
 .container-right {
     max-width: 60%;
+    margin-top: 20%;
+    align-items: center;
+    text-align: center;
+
 }
+
 .container-left {
     max-width: 80%;
-    margin-left:20%;
-    margin-top: 25%;
+    margin-left: 20%;
+    margin-top: 10%;
+
 }
 
 .container-width {
@@ -91,16 +254,31 @@ body {
 
 .hero-image img {
     border-radius: 10px;
-    width: 360px;
+    width: 420px;
     margin-left: 6%;
     margin-right: 6%;
+    filter: invert(79%) sepia(5%) saturate(631%) hue-rotate(71deg) brightness(97%) contrast(86%);
+
 }
+
 
 #gametitlemobile {
     font-size: 28px;
     padding: 3%;
     position: relative;
     margin-top: 28px;
+    display: none;
+}
+
+#gametitlemobilehr {
+    display: none;
+}
+
+#gametitledesktop {
+    font-size: 40px;
+    padding: 3%;
+    position: relative;
+    margin-left: 20%;
 }
 
 .buttonlist {
@@ -111,6 +289,7 @@ body {
     align-items: center;
     width: 70%;
     position: relative;
+    margin-left: 12%;
 }
 
 .btntab {
@@ -142,7 +321,8 @@ body {
     justify-content: start;
     margin-left: 8%;
 }
-.message{
+
+.message {
     background-color: var(--Lighter-Black);
     width: 100px;
     height: 20px;
@@ -172,34 +352,36 @@ body {
     border-radius: 5px;
     font-size: 20px;
     margin-right: 6%;
-    margin-left:6% ;
+    margin-left: 6%;
 }
+
 .downloadnowbtn button:hover {
     background-color: var(--Mytle-Green);
 }
 
-.addtocartbtn{
+.addtocartbtn {
     display: block;
     display: flex;
     align-content: center;
     justify-content: center;
     margin-bottom: 8px;
 }
+
 .addtocartbtn button {
     background-color: var(--Lighter-Black);
     width: 410px;
     height: 50px;
     text-transform: uppercase;
     color: var(--Ash-Grey);
-    border:none;
-    outline:none;
+    border: none;
+    outline: none;
     border-radius: 5px;
     font-size: 20px;
     margin-left: 6%;
     margin-right: 6%;
 }
 
-.addtocartbtn button:hover{
+.addtocartbtn button:hover {
     background-color: var(--Lighter-black-hover);
 }
 
@@ -225,12 +407,14 @@ body {
     margin-left: 6%;
     margin-right: 6%;
 }
+
 .addtowistlistbtn button:hover {
-    background-color:var(--Lighter-black-hover);
+    background-color: var(--Lighter-black-hover);
 }
+
 .spacebetweentags {
-    margin-top: 0!important;
-    padding-top: 0!important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
     position: relative;
     top: -10px;
 }
@@ -240,7 +424,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-left:6%;
+    margin-left: 6%;
     margin-right: 6%;
 }
 
@@ -271,6 +455,7 @@ body {
     justify-content: start;
     width: 50%;
 }
+
 #feature {
     justify-content: end;
     width: 50%;
@@ -279,17 +464,20 @@ body {
 .hoziline {
     background-color: var(--Bandladash-Green);
     width: 2px;
-    height: 80px ;
+    height: 80px;
     position: absolute;
 }
+
 .featurelist {
     margin-left: 5px;
 }
+
 .items {
     position: relative;
     bottom: 20px;
     font-size: 18px;
 }
+
 .title {
     color: #939e93;
     font-size: 22px;
@@ -301,13 +489,16 @@ body {
     background-color: var(--Lighter-Black);
     border-radius: 5px;
 }
+
 .header-specs {
     padding-top: 40px;
     padding-left: 20px;
 }
+
 .header-specs p {
     text-transform: uppercase;
 }
+
 .specshr {
     width: auto;
     height: 4px;
@@ -316,47 +507,73 @@ body {
     top: 5px;
 
 }
-.content  {
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .Minimum {
     width: 50%;
     padding-top: 10px;
 }
+
 .Recommend {
     width: 50%;
 }
+
 .specstitle {
     position: relative;
     top: 20px;
     left: 30px;
 }
+
 .titleop {
     opacity: 0.6;
 }
+
 .specsinfo {
     position: relative;
-    margin-left:10%;
+    margin-left: 10%;
 }
+
 .lang {
     position: relative;
     margin-left: 5%;
 }
 
 @media screen and (max-width:500px) {
+    .mainsection {
+        color: var(--Ash-Grey);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-right {
+        max-width: 100%;
+        margin-top: 0%;
+
+    }
+
+    .container-left {
+        max-width: 100%;
+        margin-left: 0%;
+
+    }
+
     .container-dp {
         position: relative;
         margin-left: 6%;
         margin-right: 6%;
     }
+
     .container-width {
         margin-left: 6%;
         margin-right: 6%;
     }
-    
+
     .hero-image {
         display: flex;
         align-items: center;
@@ -364,21 +581,26 @@ body {
         margin-left: 6%;
         margin-right: 6%;
     }
-    
+
     .hero-image img {
         border-radius: 10px;
         width: 360px;
         margin-left: 6%;
         margin-right: 6%;
     }
-    
-    #gametitle {
+
+    #gametitlemobile {
+        display: flex;
         font-size: 28px;
-        padding: 7%;
+        padding: 3%;
         position: relative;
-        top: 35px;
+        margin-top: 5%;
     }
-    
+
+    #gametitledesktop {
+        display: none;
+    }
+
     .buttonlist {
         list-style: none;
         display: flex;
@@ -387,36 +609,41 @@ body {
         align-items: center;
         width: 70%;
         position: relative;
+
     }
-    
+
     .btntab {
         color: var(--Ash-Grey);
         text-decoration: none;
         font-size: 26px;
     }
-    
+
     .btntab:hover {
         color: var(--Ash-Grey);
     }
-    
+
     .price {
         margin-top: 10px;
         display: block;
         text-align: center;
+        margin-right: 6%;
     }
-    
+
     .price p {
         font-size: 23px;
         letter-spacing: 3px;
     }
-    
+
     .messagebg {
         margin-top: 7px;
         display: block;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin-right: 6%;
     }
-    .message{
+
+    .message {
         background-color: var(--Lighter-Black);
         width: 100px;
         height: 20px;
@@ -426,7 +653,7 @@ body {
         align-items: center;
         text-transform: uppercase;
     }
-    
+
     .downloadnowbtn {
         display: block;
         display: flex;
@@ -434,7 +661,7 @@ body {
         justify-content: center;
         margin-bottom: 8px;
     }
-    
+
     .downloadnowbtn button {
         background-color: var(--Bandladash-Green);
         width: 410px;
@@ -446,45 +673,47 @@ body {
         border-radius: 5px;
         font-size: 20px;
         margin-right: 6%;
-        margin-left:6% ;
+        margin-left: 6%;
     }
+
     .downloadnowbtn button:hover {
         background-color: var(--Mytle-Green);
     }
-    
-    .addtocartbtn{
+
+    .addtocartbtn {
         display: block;
         display: flex;
         align-content: center;
         justify-content: center;
         margin-bottom: 8px;
     }
+
     .addtocartbtn button {
         background-color: var(--Lighter-Black);
         width: 410px;
         height: 50px;
         text-transform: uppercase;
         color: var(--Ash-Grey);
-        border:none;
-        outline:none;
+        border: none;
+        outline: none;
         border-radius: 5px;
         font-size: 20px;
         margin-left: 6%;
         margin-right: 6%;
     }
-    
-    .addtocartbtn button:hover{
+
+    .addtocartbtn button:hover {
         background-color: var(--Lighter-black-hover);
     }
-    
-    
+
+
     .addtowistlistbtn {
         display: block;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+
     .addtowistlistbtn button {
         background-color: var(--Lighter-Black);
         width: 410px;
@@ -499,122 +728,138 @@ body {
         margin-left: 6%;
         margin-right: 6%;
     }
+
     .addtowistlistbtn button:hover {
-        background-color:var(--Lighter-black-hover);
+        background-color: var(--Lighter-black-hover);
     }
+
     .spacebetweentags {
-        margin-top: 0!important;
-        padding-top: 0!important;
+        margin-top: 0 !important;
+        padding-top: 0 !important;
         position: relative;
         top: -10px;
     }
-    
+
     .tags {
         display: block;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-left:6%;
+        margin-left: 6%;
         margin-right: 6%;
     }
-    
+
     .tags p {
         font-size: 20px;
         letter-spacing: 2px;
     }
-    
+
     .tags .title {
         opacity: 0.7;
     }
-    
+
     #para {
         margin-top: 20px;
     }
-    
+
     #description {
         font-size: 20px;
     }
-    
+
     .feature-genre {
         display: flex;
         justify-content: space-between;
     }
-    
-    
+
+
     #genre {
         justify-content: start;
         width: 50%;
     }
+
     #feature {
         justify-content: end;
         width: 50%;
     }
-    
+
     .hoziline {
         background-color: var(--Bandladash-Green);
         width: 2px;
-        height: 80px ;
+        height: 80px;
         position: absolute;
     }
+
     .featurelist {
         margin-left: 5px;
     }
+
     .items {
         position: relative;
         bottom: 20px;
         font-size: 18px;
     }
+
     .title {
         color: #939e93;
         font-size: 22px;
     }
-    
+
     .specs {
         width: 100%;
         height: auto;
         background-color: var(--Lighter-Black);
         border-radius: 5px;
     }
+
     .header-specs {
         padding-top: 40px;
         padding-left: 20px;
     }
+
     .header-specs p {
         text-transform: uppercase;
     }
+
     .specshr {
         width: auto;
         height: 4px;
         position: relative;
         background-color: var(--Bandladash-Green);
         top: 5px;
-    
+
     }
-    .content  {
+
+    .content {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+
     .Minimum {
         width: 50%;
         padding-top: 10px;
     }
+
     .Recommend {
         width: 50%;
     }
+
     .specstitle {
         position: relative;
         top: 20px;
         left: 30px;
     }
+
     .titleop {
         opacity: 0.6;
     }
+
     .specsinfo {
         position: relative;
-        margin-left:10%;
+        margin-left: 10%;
     }
+
     .lang {
         position: relative;
         margin-left: 5%;
@@ -707,16 +952,18 @@ footer {
     color: var(--Ash-Grey);
     background-color: var(--Lighter-Black);
 }
+
 .footer-hr {
     background-color: var(--Bandladash-Green);
     width: auto;
-    height: 4px!important;
+    height: 4px !important;
     position: relative;
     top: -20px;
     opacity: 1;
 }
+
 .footer-logo {
-    width:60px;
+    width: 60px;
 }
 
 .footer-bg {
@@ -732,16 +979,18 @@ footer {
 
 .footer-nav ul {
     display: flex;
-    flex-direction: row ;
+    flex-direction: row;
     list-style: none;
     justify-content: space-between;
     width: 100px;
 }
+
 .footer-social {
     display: flex;
     justify-content: end;
     flex-direction: row;
 }
+
 #copyright {
     position: relative;
     top: -20px;
@@ -893,6 +1142,6 @@ footer {
         align-items: flex-end;
         flex-direction: row;
         position: absolute;
-        
+
     }
 }
