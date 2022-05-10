@@ -2,7 +2,7 @@
     font-family: 'DIN Condensed';
     font-style: normal;
     font-weight: 700;
-    src: local('DIN Condensed'), url('https://fonts.cdnfonts.com/s/14504/DINCondensed-Bold.woff') format('woff');
+    src: url(/fonts/FontsFree-Net-D-DINCondensed-Bold.ttf)
 }
 
 :root {
