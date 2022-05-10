@@ -1,4 +1,9 @@
-@import url('http://fonts.cdnfonts.com/css/din-condensed');
+@font-face {
+    font-family: 'DIN Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('DIN Condensed'), url('https://fonts.cdnfonts.com/s/14504/DINCondensed-Bold.woff') format('woff');
+}
 
 :root {
     /* Colours */
@@ -941,7 +946,7 @@ button:hover {
     background-color: var(--Bandladash-Green);
     border: var(--Bandladash-Green) solid 2px;
     border-radius: 10px;
-    width: 80px;
+    width: 120px;
     text-align: center;
     cursor: pointer;
 }
